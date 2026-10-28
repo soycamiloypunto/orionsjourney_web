@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | Orión's Journey</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090714;
+      --card-bg: rgba(18, 14, 34, 0.88);
+      --card-border: rgba(2, 245, 251, 0.35);
+      --neon-cyan: #02f5fb;
+      --neon-pink: #ff2d8d;
+      --neon-purple: #9d3aff;
+      --neon-yellow: #ffd000;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(157, 58, 255, 0.18) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(2, 245, 251, 0.15) 0%, transparent 45%),
+        linear-gradient(180deg, #090714 0%, #0c081e 100%);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(2, 245, 251, 0.2);
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .logo-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(2, 245, 251, 0.5);
+    }
+    .logo-text {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(2, 245, 251, 0.6);
+    }
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px;
+      border-radius: 20px;
+      border: 1px solid rgba(2, 245, 251, 0.25);
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .lang-btn.active {
+      background: var(--neon-cyan);
+      color: #070d19;
+      box-shadow: 0 0 10px rgba(2, 245, 251, 0.5);
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(2, 245, 251, 0.04);
+      backdrop-filter: blur(12px);
+    }
+    h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 14px rgba(2, 245, 251, 0.4);
+    }
+    .meta-tag {
+      font-size: 14px;
+      color: var(--neon-cyan);
+      margin-bottom: 28px;
+      font-weight: 500;
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(2, 245, 251, 0.08);
+      border-radius: 6px;
+      border: 1px solid rgba(2, 245, 251, 0.2);
+    }
+    h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--neon-cyan);
+      margin-top: 32px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--neon-pink);
+      border-radius: 2px;
+      box-shadow: 0 0 8px var(--neon-pink);
+    }
+    p {
+      margin-bottom: 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 18px;
+    }
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    strong {
+      color: #fff;
+    }
+    .highlight-box {
+      background: rgba(255, 45, 141, 0.08);
+      border-left: 4px solid var(--neon-pink);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+      font-size: 14.5px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .footer a {
+      color: var(--neon-cyan);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(157, 58, 255, 0.15);
+      border: 1px solid var(--neon-purple);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+      <a href="index.html" class="logo-area">
+        <img src="images/icon.png" alt="Orión's Journey Logo" class="logo-img">
+        <span class="logo-text">ORIÓN'S JOURNEY</span>
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('es')">Español</button>
+        <button class="lang-btn" onclick="switchLang('en')">English</button>
+      </div>
+    </nav>
+
+    <!-- SPANISH CONTENT -->
+    <div id="content-es" class="card">
+      <h1>Política de Privacidad</h1>
+      <div class="meta-tag">Última actualización: 28 de Octubre de 2026</div>
+
+      <div class="app-badge">
+        <span>🎮 Aplicación: <strong>Orión's Journey</strong> (com.cristiantabares.orionsjourney)</span>
+      </div>
+
+      <p>Bienvenido a <strong>Orión's Journey</strong>. Esta Política de Privacidad describe cómo se recopila, utiliza y protege la información en nuestro videojuego móvil. Nos tomamos muy en serio la seguridad y la privacidad de nuestros usuarios y jugadores.</p>
+
+      <h2>1. Responsable del Tratamiento</h2>
+      <p>El responsable del desarrollo y distribución de <strong>Orión's Journey</strong> es el desarrollador independiente <strong>Cristian Camilo Tabares</strong>.</p>
+      <p>Para cualquier consulta, inquietud o ejercicio de derechos de privacidad, puedes contactarnos directamente al correo electrónico: <strong>cristian.tabares.dev@gmail.com</strong>.</p>
+
+      <h2>2. Información que NO recopilamos</h2>
+      <div class="highlight-box">
+        <strong>Privacidad ante todo:</strong> Orión's Journey NO recopila, transmite ni almacena en servidores externos información personal identificable como nombres reales, direcciones físicas, números de teléfono, contactos, cuentas de redes sociales o ubicación GPS en tiempo real.
+      </div>
+      <p>No utilizamos rastreadores de publicidad invasiva de terceros ni vendemos información de ningún tipo a agencias publicitarias o corredores de datos.</p>
+
+      <h2>3. Datos de Juego y Almacenamiento Local</h2>
+      <p>El juego guarda datos exclusivamente en el almacenamiento interno de tu dispositivo móvil mediante las APIs nativas de Android (SharedPreferences y sandbox local de la aplicación):</p>
+      <ul>
+        <li><strong>Progreso de niveles:</strong> Mundos desbloqueados, niveles superados y mejores puntuaciones de monedas recogidas.</li>
+        <li><strong>Configuración personalizada:</strong> Preferencias de idioma, efectos de sonido, música, modo turbo y esquemas de control seleccionados.</li>
+        <li><strong>Personalización de Orión:</strong> Colores de carcasa seleccionados y estilo de estela propulsora en el Armario.</li>
+        <li><strong>Niveles del Creador (Orions Maker):</strong> Datos de diseño de los niveles personalizados creados por el jugador en los 12 casilleros locales.</li>
+      </ul>
+      <p>Todos estos datos residen en tu propio dispositivo. Puedes eliminarlos en cualquier momento borrando el almacenamiento o desinstalando la aplicación desde los ajustes de Android.</p>
+
+      <h2>4. Compras Integradas (Google Play In-App Billing)</h2>
+      <p>Orión's Journey ofrece compras integradas opcionales (tales como desbloqueo del juego completo, mundos adicionales o paquetes de personalización).</p>
+      <p>Todas las transacciones y pagos son procesados de forma segura y directa por <strong>Google Play Billing (Google LLC)</strong>. Ni el desarrollador ni el juego tienen acceso a números de tarjetas de crédito, contraseñas bancarias o datos de facturación.</p>
+
+      <h2>5. Privacidad de Menores (COPPA y Familias)</h2>
+      <p>Orión's Journey es un juego seguro y apto para toda la familia. Cumplimos con las disposiciones de la <em>Children's Online Privacy Protection Act (COPPA)</em> y con las directrices para familias de Google Play. No solicitamos edad ni recopilamos intencionalmente datos de menores de 13 años.</p>
+
+      <h2>6. Permisos del Dispositivo</h2>
+      <p>La aplicación únicamente solicita los permisos técnicos estrictamente indispensables para el funcionamiento y renderizado del juego (aceleración por hardware, reproducción de audio y almacenamiento local para guardar niveles). No se solicita acceso a cámara, micrófono, lista de contactos ni ubicación precisa.</p>
+
+      <h2>7. Cambios a esta Política</h2>
+      <p>Podemos actualizar nuestra Política de Privacidad de vez en cuando para reflejar mejoras en el juego o requisitos regulatorios. Cualquier cambio será publicado en este enlace con su fecha correspondiente de revisión.</p>
+
+      <h2>8. Contacto</h2>
+      <p>Si tienes preguntas sobre esta política o sobre el juego, contáctanos en:</p>
+      <p>📧 <strong>cristian.tabares.dev@gmail.com</strong><br>
+         Bogotá, Colombia.</p>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="card" style="display: none;">
+      <h1>Privacy Policy</h1>
+      <div class="meta-tag">Last updated: October 28, 2026</div>
+
+      <div class="app-badge">
+        <span>🎮 Application: <strong>Orión's Journey</strong> (com.cristiantabares.orionsjourney)</span>
+      </div>
+
+      <p>Welcome to <strong>Orión's Journey</strong>. This Privacy Policy outlines how information is collected, used, and safeguarded within our mobile video game. We prioritize player security and privacy above all.</p>
+
+      <h2>1. Data Controller</h2>
+      <p>The developer and publisher of <strong>Orión's Journey</strong> is independent creator <strong>Cristian Camilo Tabares</strong>.</p>
+      <p>For any inquiries, questions, or privacy-related requests, you can contact us directly via email at: <strong>cristian.tabares.dev@gmail.com</strong>.</p>
+
+      <h2>2. Information We DO NOT Collect</h2>
+      <div class="highlight-box">
+        <strong>Privacy First:</strong> Orión's Journey DOES NOT collect, transmit, or store personally identifiable information (PII) on external servers, including real names, home addresses, phone numbers, contact books, social media credentials, or real-time GPS location.
+      </div>
+      <p>We do not use invasive third-party ad trackers, nor do we sell or monetize player data in any form.</p>
+
+      <h2>3. Gameplay Data & Local Storage</h2>
+      <p>The game saves data strictly on your local device storage using standard Android APIs (SharedPreferences and internal app sandbox):</p>
+      <ul>
+        <li><strong>Level Progress:</strong> Unlocked worlds, completed courses, and high scores for collectible rings.</li>
+        <li><strong>Game Settings:</strong> Audio volume, music toggles, turbo mode preference, language selection, and control schemes.</li>
+        <li><strong>Orion Customization:</strong> Chosen robot chassis color and particle trail styling in the Wardrobe.</li>
+        <li><strong>Custom Levels (Orions Maker):</strong> Layouts, cannons, and items designed by the player in the 12 local level slots.</li>
+      </ul>
+      <p>All this data remains on your physical device. You can clear or delete it at any time by clearing application data or uninstalling the app via Android settings.</p>
+
+      <h2>4. In-App Purchases (Google Play Billing)</h2>
+      <p>Orión's Journey offers optional in-app microtransactions (such as unlocking the full world expansion or cosmetic bundles).</p>
+      <p>All payments and monetary transactions are securely handled directly by <strong>Google Play Billing (Google LLC)</strong>. Neither the developer nor the game ever receives or stores sensitive financial details or credit card information.</p>
+
+      <h2>5. Children's Privacy (COPPA & Families Policy)</h2>
+      <p>Orión's Journey is designed to be safe, entertaining, and family-friendly. We comply with the <em>Children's Online Privacy Protection Act (COPPA)</em> and Google Play Family Policy requirements. We do not solicit personal details or collect data from children under 13.</p>
+
+      <h2>6. Device Permissions</h2>
+      <p>The game only requests standard technical permissions required to render graphics, play sound effects/music, and store local savegames. We do not access camera, microphone, device contacts, or precise geolocation.</p>
+
+      <h2>7. Policy Updates</h2>
+      <p>We may update this Privacy Policy periodically to reflect new features or regulatory requirements. Any modifications will be posted at this URL with an updated revision date.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>For any questions regarding this policy or the game, please reach out to:</p>
+      <p>📧 <strong>cristian.tabares.dev@gmail.com</strong><br>
+         Bogotá, Colombia.</p>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Orión's Journey • Desarrollado por Cristian Camilo Tabares</p>
+      <p style="margin-top: 6px;"><a href="index.html">← Volver al Sitio Oficial</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const esCard = document.getElementById('content-es');
+      const enCard = document.getElementById('content-en');
+      const btns = document.querySelectorAll('.lang-btn');
+
+      if (lang === 'es') {
+        esCard.style.display = 'block';
+        enCard.style.display = 'none';
+        btns[0].classList.add('active');
+        btns[1].classList.remove('active');
+      } else {
+        esCard.style.display = 'none';
+        enCard.style.display = 'block';
+        btns[0].classList.remove('active');
+        btns[1].classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
