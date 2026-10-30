@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orión's Journey • Videojuego Oficial</title>
-  <meta name="description" content="Orión's Journey: Un juego arcade de plataformas gravitacionales retro-futurista para Android. Lanza a Orión entre cañones, esquiva peligros y crea tus propios niveles con Orions Maker.">
+  <title>Orión's Journey • Videojuego Arcade Balístico Oficial</title>
+  <meta name="description" content="Orión's Journey: Videojuego arcade retro-futurista de plataformas balísticas para Android. Explora el Mundo 1 (Dunas Desérticas) y Mundo 2 (Bosque Olvidado), descubre cinemáticas de historia, diseña con Orions Maker y publica niveles mundiales en la nube.">
   <link rel="icon" type="image/png" href="images/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
       --neon-purple: #9d3aff;
       --neon-yellow: #ffd000;
       --neon-orange: #ff7700;
+      --neon-green: #00e676;
       --text: #e6edf3;
       --text-muted: #9ba3af;
     }
@@ -49,7 +50,7 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(16px);
-      background: rgba(7, 4, 15, 0.75);
+      background: rgba(7, 4, 15, 0.85);
       border-bottom: 1px solid rgba(2, 245, 251, 0.2);
       padding: 14px 28px;
     }
@@ -82,14 +83,14 @@
     }
     .nav-links {
       display: flex;
-      gap: 24px;
+      gap: 20px;
       align-items: center;
       list-style: none;
     }
     .nav-links a {
       color: var(--text-muted);
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 500;
       transition: color 0.2s, text-shadow 0.2s;
     }
@@ -100,7 +101,7 @@
     .nav-btn {
       background: linear-gradient(135deg, #02f5fb 0%, #0099cc 100%);
       color: #070d19 !important;
-      padding: 8px 20px;
+      padding: 8px 18px;
       border-radius: 20px;
       font-weight: 700 !important;
       box-shadow: 0 0 14px rgba(2, 245, 251, 0.4);
@@ -116,7 +117,7 @@
       position: relative;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 70px 24px 80px;
+      padding: 60px 24px 70px;
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       gap: 40px;
@@ -135,15 +136,15 @@
       font-weight: 600;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       box-shadow: 0 0 12px rgba(2, 245, 251, 0.25);
     }
     .hero h1 {
       font-family: 'Rajdhani', sans-serif;
-      font-size: 58px;
+      font-size: 54px;
       font-weight: 800;
       line-height: 1.08;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       color: #fff;
       margin-bottom: 20px;
     }
@@ -154,9 +155,9 @@
       text-shadow: 0 0 20px rgba(2, 245, 251, 0.3);
     }
     .hero p {
-      font-size: 17.5px;
+      font-size: 17px;
       color: #cbd5e1;
-      margin-bottom: 32px;
+      margin-bottom: 30px;
       max-width: 580px;
     }
     .hero-actions {
@@ -173,8 +174,8 @@
       color: #fff;
       text-decoration: none;
       font-weight: 700;
-      font-size: 16px;
-      padding: 14px 28px;
+      font-size: 15.5px;
+      padding: 13px 26px;
       border-radius: 28px;
       border: 2px solid #82f8ff;
       box-shadow: 0 0 22px rgba(30, 220, 255, 0.55), 0 5px 15px rgba(0, 0, 0, 0.4);
@@ -182,26 +183,26 @@
     }
     .jelly-btn-cyan:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0 32px rgba(30, 220, 255, 0.85), 0 8px 20px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 32px rgba(30, 220, 255, 0.85);
     }
-    .jelly-btn-pink {
+    .jelly-btn-purple {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: linear-gradient(180deg, #ff3caf 0%, #be0f73 100%);
+      background: linear-gradient(180deg, #b04aff 0%, #6815b8 100%);
       color: #fff;
       text-decoration: none;
       font-weight: 700;
-      font-size: 16px;
-      padding: 14px 28px;
+      font-size: 15.5px;
+      padding: 13px 26px;
       border-radius: 28px;
-      border: 2px solid #ff8ce1;
-      box-shadow: 0 0 22px rgba(255, 60, 190, 0.55), 0 5px 15px rgba(0, 0, 0, 0.4);
+      border: 2px solid #df9eff;
+      box-shadow: 0 0 22px rgba(176, 74, 255, 0.55), 0 5px 15px rgba(0, 0, 0, 0.4);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .jelly-btn-pink:hover {
+    .jelly-btn-purple:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0 32px rgba(255, 60, 190, 0.85);
+      box-shadow: 0 0 32px rgba(176, 74, 255, 0.85);
     }
     .hero-visual {
       position: relative;
@@ -215,9 +216,9 @@
       padding: 10px;
       background: rgba(16, 12, 36, 0.85);
       border: 2px solid var(--neon-cyan);
-      box-shadow: 0 0 40px rgba(2, 245, 251, 0.35), inset 0 0 20px rgba(2, 245, 251, 0.1);
+      box-shadow: 0 0 40px rgba(2, 245, 251, 0.35);
       backdrop-filter: blur(12px);
-      transform: perspective(1000px) rotateY(-6deg) rotateX(4deg);
+      transform: perspective(1000px) rotateY(-5deg) rotateX(3deg);
       transition: transform 0.5s ease;
     }
     .hero-device-card:hover {
@@ -233,15 +234,15 @@
     /* STATS STRIP */
     .stats-strip {
       max-width: 1200px;
-      margin: 0 auto 60px;
+      margin: 0 auto 50px;
       padding: 0 24px;
     }
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
-      background: rgba(18, 14, 38, 0.6);
-      border: 1px solid rgba(2, 245, 251, 0.2);
+      background: rgba(18, 14, 38, 0.7);
+      border: 1px solid rgba(2, 245, 251, 0.25);
       border-radius: 20px;
       padding: 24px;
       backdrop-filter: blur(10px);
@@ -258,7 +259,7 @@
       line-height: 1.1;
     }
     .stat-label {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -270,11 +271,11 @@
     .section-wrap {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 70px 24px;
+      padding: 60px 24px;
     }
     .section-header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
     .section-header .tag {
       font-family: 'Rajdhani', sans-serif;
@@ -287,7 +288,7 @@
     }
     .section-header h2 {
       font-family: 'Rajdhani', sans-serif;
-      font-size: 42px;
+      font-size: 40px;
       font-weight: 800;
       letter-spacing: 0.5px;
       color: #fff;
@@ -295,87 +296,220 @@
     .section-header p {
       color: var(--text-muted);
       font-size: 16.5px;
-      max-width: 620px;
+      max-width: 680px;
       margin: 10px auto 0;
     }
 
-    /* GRID FEATURES */
-    .features-grid {
+    /* WORLDS GRID */
+    .worlds-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 26px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-bottom: 30px;
     }
-    .feature-card {
+    .world-card {
       background: var(--bg-card);
-      border: 1px solid rgba(2, 245, 251, 0.25);
-      border-radius: 20px;
-      padding: 32px 28px;
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
+      border: 1px solid rgba(2, 245, 251, 0.3);
+      border-radius: 22px;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
-    .feature-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    .feature-card:hover {
+    .world-card:hover {
       transform: translateY(-6px);
       border-color: var(--neon-cyan);
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(2, 245, 251, 0.25);
+      box-shadow: 0 16px 40px rgba(2, 245, 251, 0.25);
     }
-    .feature-card:hover::before {
-      opacity: 1;
+    .world-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
     }
-    .feature-icon {
-      font-size: 34px;
-      margin-bottom: 18px;
-      display: inline-block;
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
-      border-radius: 16px;
-      background: rgba(2, 245, 251, 0.1);
-      border: 1px solid rgba(2, 245, 251, 0.3);
-      box-shadow: 0 0 14px rgba(2, 245, 251, 0.2);
+    .world-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
     }
-    .feature-card h3 {
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 24px;
+    .world-card:hover .world-img-wrap img {
+      transform: scale(1.05);
+    }
+    .world-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(7, 4, 15, 0.88);
+      border: 1px solid var(--neon-cyan);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 13px;
       font-weight: 700;
-      color: #fff;
-      margin-bottom: 10px;
+      color: var(--neon-cyan);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 10px rgba(2, 245, 251, 0.3);
     }
-    .feature-card p {
+    .world-body {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .world-body h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .world-body p {
       font-size: 15px;
       color: #94a3b8;
       line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .world-perks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .perk-pill {
+      font-size: 12.5px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 4px 12px;
+      color: #cbd5e1;
+    }
+    .perk-pill.highlight {
+      border-color: var(--neon-yellow);
+      color: var(--neon-yellow);
+    }
+    .world-teaser-strip {
+      background: rgba(18, 14, 38, 0.6);
+      border: 1px dashed rgba(157, 58, 255, 0.4);
+      border-radius: 16px;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
-    /* SHOWCASE BANNERS */
+    /* CINEMATIC LORE GRID */
+    .cinematic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .cinematic-card {
+      background: linear-gradient(180deg, rgba(22, 15, 45, 0.85) 0%, rgba(10, 7, 24, 0.95) 100%);
+      border: 1px solid rgba(157, 58, 255, 0.4);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .cinematic-header {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+    .cinematic-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cinematic-body {
+      padding: 26px;
+    }
+    .cinematic-chapter {
+      color: var(--neon-pink);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 13.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .cinematic-body h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .quote-block {
+      background: rgba(0, 0, 0, 0.4);
+      border-left: 3px solid var(--neon-cyan);
+      padding: 12px 16px;
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 14.5px;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    /* OBJECTS & CANNONS GRID */
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .item-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(2, 245, 251, 0.2);
+      border-radius: 18px;
+      padding: 22px 16px;
+      text-align: center;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .item-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--neon-cyan);
+      box-shadow: 0 10px 25px rgba(2, 245, 251, 0.2);
+    }
+    .item-icon-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin: 0 auto 12px;
+      display: block;
+      filter: drop-shadow(0 0 10px rgba(2, 245, 251, 0.4));
+    }
+    .item-card h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .item-card p {
+      font-size: 13.5px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    /* ORIONS MAKER BANNER */
     .maker-banner {
       background: linear-gradient(135deg, rgba(20, 14, 42, 0.95) 0%, rgba(10, 7, 24, 0.95) 100%);
       border: 1px solid rgba(2, 245, 251, 0.35);
       border-radius: 24px;
       padding: 44px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.05fr 0.95fr;
       gap: 40px;
       align-items: center;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6), inset 0 0 30px rgba(2, 245, 251, 0.05);
-      margin-bottom: 60px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      margin-bottom: 40px;
     }
     .maker-content h3 {
       font-family: 'Rajdhani', sans-serif;
-      font-size: 36px;
+      font-size: 34px;
       font-weight: 800;
       color: #fff;
       margin-bottom: 14px;
@@ -383,31 +517,134 @@
     .maker-content p {
       color: #cbd5e1;
       font-size: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
     .maker-features-list {
       list-style: none;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
     .maker-features-list li {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 10px;
-      font-size: 15px;
+      font-size: 14.5px;
       color: #e2e8f0;
       margin-bottom: 10px;
+      line-height: 1.5;
     }
     .maker-features-list li::before {
       content: "✔";
       color: var(--neon-cyan);
       font-weight: bold;
       text-shadow: 0 0 8px var(--neon-cyan);
+      margin-top: 1px;
     }
     .maker-preview-img {
       width: 100%;
       border-radius: 16px;
       border: 2px solid var(--border-cyan);
       box-shadow: 0 0 30px rgba(2, 245, 251, 0.3);
+    }
+    .community-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 24px;
+    }
+    .community-subcard {
+      background: rgba(18, 14, 38, 0.7);
+      border: 1px solid rgba(2, 245, 251, 0.2);
+      border-radius: 18px;
+      padding: 22px;
+    }
+    .community-subcard h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--neon-cyan);
+      margin-bottom: 8px;
+    }
+    .community-subcard p {
+      font-size: 14px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    /* IN-APP PURCHASES / SHOP SECTION */
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .shop-card {
+      background: linear-gradient(180deg, rgba(20, 14, 42, 0.9) 0%, rgba(10, 7, 24, 0.95) 100%);
+      border: 1px solid rgba(255, 208, 0, 0.3);
+      border-radius: 20px;
+      padding: 30px 22px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      position: relative;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .shop-card.featured {
+      border: 2px solid var(--neon-cyan);
+      box-shadow: 0 0 30px rgba(2, 245, 251, 0.3);
+    }
+    .shop-card:hover {
+      transform: translateY(-6px);
+    }
+    .shop-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, #ff2d8d, #9d3aff);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      box-shadow: 0 0 12px rgba(255, 45, 141, 0.5);
+    }
+    .shop-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .shop-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .shop-desc {
+      font-size: 14px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .shop-perks-list {
+      list-style: none;
+      text-align: left;
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+    .shop-perks-list li {
+      margin-bottom: 6px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .shop-perks-list li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: var(--neon-yellow);
+      font-size: 11px;
+      top: 1px;
     }
 
     /* SCREENSHOTS GALLERY */
@@ -507,6 +744,11 @@
     }
 
     /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .items-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
@@ -524,10 +766,22 @@
       .stats-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      .features-grid {
+      .worlds-grid {
         grid-template-columns: 1fr;
       }
+      .cinematic-grid {
+        grid-template-columns: 1fr;
+      }
+      .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .maker-banner {
+        grid-template-columns: 1fr;
+      }
+      .community-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .shop-grid {
         grid-template-columns: 1fr;
       }
       .gallery-grid {
@@ -536,6 +790,14 @@
       .privacy-card {
         flex-direction: column;
         text-align: center;
+      }
+    }
+    @media (max-width: 600px) {
+      .items-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
       }
     }
   </style>
@@ -550,9 +812,11 @@
         <span>ORIÓN'S JOURNEY</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#mecanicas">Mecánicas</a></li>
+        <li><a href="#mundos">Mundos</a></li>
+        <li><a href="#historia">Lore</a></li>
+        <li><a href="#objetos">Cañones & Objetos</a></li>
         <li><a href="#maker">Orions Maker</a></li>
+        <li><a href="#tienda">Tienda</a></li>
         <li><a href="#galeria">Galería</a></li>
         <li><a href="privacy.html">Privacidad</a></li>
         <li><a href="#descarga" class="nav-btn">Tester Google Play</a></li>
@@ -565,13 +829,13 @@
     <div class="hero-content">
       <div class="hero-tag">🚀 Arcade Balístico Retro-Futurista</div>
       <h1>Desafía la Gravedad en el Viaje Cósmico de <span class="highlight">Orión</span></h1>
-      <p>Lánzate entre cañones balísticos, domina el impulso inercial, recolecta anillos estelares y crea tus propios desafíos con el editor de niveles integrado.</p>
+      <p>Lánzate entre cañones balísticos, domina el impulso inercial, explora mundos con cinemáticas de historia, recoge los fragmentos de disco y comparte tus propios niveles con jugadores de todo el mundo.</p>
       <div class="hero-actions" id="descarga">
-        <a href="#maker" class="jelly-btn-cyan">
-          <span>🛠️ Conocer Orions Maker</span>
+        <a href="#mundos" class="jelly-btn-cyan">
+          <span>🌍 Explorar Mundos</span>
         </a>
-        <a href="privacy.html" class="jelly-btn-pink">
-          <span>🔒 Política de Privacidad</span>
+        <a href="#maker" class="jelly-btn-purple">
+          <span>🛠️ Orions Maker & Niveles Mundiales</span>
         </a>
       </div>
     </div>
@@ -586,92 +850,283 @@
   <section class="stats-strip">
     <div class="stats-grid">
       <div class="stat-item">
-        <div class="stat-num">36+</div>
-        <div class="stat-label">Niveles Oficiales</div>
+        <div class="stat-num">2 Mundos</div>
+        <div class="stat-label">Dunas & Bosque (24 Niveles)</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Ranuras de Creador</div>
+        <div class="stat-num">En la Nube</div>
+        <div class="stat-label">Niveles Mundiales Online</div>
       </div>
       <div class="stat-item">
         <div class="stat-num">60 FPS</div>
-        <div class="stat-label">Motor Físico Nativo</div>
+        <div class="stat-label">Física Nativa Android</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Personalizable</div>
+        <div class="stat-num">0 Anuncios</div>
+        <div class="stat-label">Experiencia 100% Pura</div>
       </div>
     </div>
   </section>
 
-  <!-- HISTORIA -->
-  <section id="historia" class="section-wrap">
+  <!-- MUNDOS -->
+  <section id="mundos" class="section-wrap">
     <div class="section-header">
-      <div class="tag">Lore & Aventura</div>
-      <h2>La Odisea de Orión</h2>
-      <p>Tras una misteriosa anomalía gravitacional, Orión despierta en un planeta en ruinas flotantes. Solo mediante cañones de impulso y vórtices dimensionales podrá restaurar el núcleo cósmico.</p>
+      <div class="tag">Exploración Interplanetaria</div>
+      <h2>Dos Mundos Oficiales Disponibles</h2>
+      <p>Acompaña a Orión a través de paisajes alienígenas devastados por la anomalía gravitacional. Cada mundo cuenta con 12 niveles oficiales y un fragmento de disco secreto por rescatar.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🤖</div>
-        <h3>Orión, El Autómata</h3>
-        <p>Un explorador androide con emociones dinámicas que reacciona a la velocidad, mareos por giros y la emoción del vuelo libre.</p>
+
+    <div class="worlds-grid">
+      <!-- MUNDO 1 -->
+      <div class="world-card">
+        <div class="world-img-wrap">
+          <img src="images/world1.jpg" alt="Mundo 1: Dunas Desérticas">
+          <div class="world-badge">MUNDO 1 • 12 NIVELES</div>
+        </div>
+        <div class="world-body">
+          <h3>Dunas Desérticas</h3>
+          <p>Un páramo post-apocalíptico de arenas rojas, restos de tuberías industriales y ruinas de una civilización perdida. Las corrientes de viento cruzadas y nubes de vapor pondrán a prueba tu sincronización para alcanzar el Aro Gigante y rescatar el <strong>Fragmento de Disco 1</strong>.</p>
+          <div class="world-perks">
+            <span class="perk-pill">🏜️ Arenas Letales</span>
+            <span class="perk-pill">💨 Nubes de Vapor</span>
+            <span class="perk-pill">⚙️ Cañones Básicos & Rieles</span>
+            <span class="perk-pill highlight">💿 Fragmento Disco 1</span>
+          </div>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">🌪️</div>
-        <h3>Mundo 1: Dunas del Vacío</h3>
-        <p>Estructuras derruidas, corrientes de viento y nubes de vapor que ocultan caminos secretos hacia la meta gigante.</p>
+
+      <!-- MUNDO 2 -->
+      <div class="world-card">
+        <div class="world-img-wrap">
+          <img src="images/world2.jpg" alt="Mundo 2: Bosque Olvidado">
+          <div class="world-badge" style="border-color: #00e676; color: #00e676;">MUNDO 2 • 12 NIVELES</div>
+        </div>
+        <div class="world-body">
+          <h3>Bosque Olvidado</h3>
+          <p>Una selva cósmica donde la vegetación alienígena creció sin control sobre las antiguas cicatrices metálicas. Con troncos colosales, plataformas orgánicas de rebote y mayor densidad de obstáculos, aquí aguarda escondido el misterioso <strong>Fragmento de Disco 2</strong>.</p>
+          <div class="world-perks">
+            <span class="perk-pill">🌲 Árboles Colosales</span>
+            <span class="perk-pill">🍃 Maleza Oculta</span>
+            <span class="perk-pill">🌀 Turbinas de Viento</span>
+            <span class="perk-pill highlight">💿 Fragmento Disco 2</span>
+          </div>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">🌀</div>
-        <h3>Vórtices Cósmicos</h3>
-        <p>Cruza los portales dimensionales absorbiendo a Orión con animaciones cinemáticas fluidas hacia nuevos cuadrantes galácticos.</p>
+    </div>
+
+    <!-- TEASER MUNDO 3 -->
+    <div class="world-teaser-strip">
+      <div>
+        <strong style="color: #fff; font-size: 15px;">🌌 Próximo Destino: Mundo 3 • Cosmos Silencioso</strong>
+        <p style="color: #94a3b8; font-size: 13.5px; margin: 0;">Gravedad cero, vórtices oscuros y el fragmento final para completar la canción que devolverá la vida al cosmos.</p>
       </div>
+      <span class="perk-pill" style="border-color: var(--neon-purple); color: var(--neon-purple);">En Desarrollo</span>
     </div>
   </section>
 
-  <!-- MECANICAS -->
-  <section id="mecanicas" class="section-wrap" style="background: rgba(12, 8, 25, 0.4); border-radius: 28px;">
+  <!-- LORE & CINEMÁTICAS -->
+  <section id="historia" class="section-wrap" style="background: rgba(12, 8, 25, 0.45); border-radius: 28px;">
     <div class="section-header">
-      <div class="tag">Jugabilidad Dinámica</div>
-      <h2>Física y Balística Precisa</h2>
-      <p>Cada cañón cuenta con características únicas para poner a prueba tu cálculo balístico y reflejos.</p>
+      <div class="tag">Lore & Narrativa</div>
+      <h2>La Historia de Orión en Cinemáticas</h2>
+      <p>A través de hermosas secuencias ilustradas y banda sonora orquestal, descubre la memoria del autómata y el secreto del disco quebrado.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🎯</div>
-        <h3>Cañones Direccionales</h3>
-        <p>Cañones fijos, rotatorios en ángulos de 45° y cañones móviles con rieles horizontales y verticales calculados con precisión.</p>
+
+    <div class="cinematic-grid">
+      <!-- CINEMÁTICA 1 -->
+      <div class="cinematic-card">
+        <div class="cinematic-header">
+          <img src="images/story1.jpg" alt="Cinemática 1: Despertar en las Ruinas">
+        </div>
+        <div class="cinematic-body">
+          <div class="cinematic-chapter">Capítulo 1 • El Despertar</div>
+          <h3>Silencio entre Escombros</h3>
+          <div class="quote-block">
+            "Al despertar solo encontré silencio y escombros. Todo a mi alrededor está roto, como si un gran vacío hubiera borrado de golpe cualquier rastro de vida..."
+          </div>
+          <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.6;">
+            Orión despierta sin recuerdos en un taller subterráneo abandonado. Al encontrar planos a medio terminar y un cañón solitario apuntando al cielo, comprende que quedarse allí no le dará respuestas: debe impulsarse al firmamento y buscar su origen por su propia cuenta.
+          </p>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">🚩</div>
-        <h3>Cañones Checkpoint</h3>
-        <p>Puntos de control con izado de bandera que resguardan tu avance y monedas ante cualquier caída inesperada.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">✨</div>
-        <h3>Estelas de Propulsión</h3>
-        <p>Rastros neón con partículas aerodinámicas en 6 tonalidades vibrantes que marcan la velocidad supersónica de Orión.</p>
+
+      <!-- CINEMÁTICA 2 -->
+      <div class="cinematic-card">
+        <div class="cinematic-header">
+          <img src="images/cinematica2_forest.jpg" alt="Cinemática 2: Bosque Olvidado y el Disco">
+        </div>
+        <div class="cinematic-body">
+          <div class="cinematic-chapter">Capítulo 2 • El Secreto del Disco</div>
+          <h3>El Fragmento que Vibra</h3>
+          <div class="quote-block">
+            "¿Dónde estoy? La flora aquí creció sin control... El fragmento de disco comenzó a vibrar, reconociendo este planeta. No me detendré hasta que la canción completa vuelva a sonar."
+          </div>
+          <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.6;">
+            Tras superar el primer mundo, Orión custodia un fragmento de disco musical roto. Al aterrizar en el Bosque Olvidado, el fragmento reacciona con la atmósfera: la segunda parte está cerca. Orión enciende sus propulsores decidido a reconstruir la verdad cósmica.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ORIONS MAKER -->
+  <!-- CAÑONES Y OBJETOS -->
+  <section id="objetos" class="section-wrap">
+    <div class="section-header">
+      <div class="tag">Mecánicas Simples & Dinámicas</div>
+      <h2>Cañones y Objetos del Juego</h2>
+      <p>Sin comandos complejos ni combinaciones difíciles: toda la balística se domina tocando la pantalla en el instante preciso.</p>
+    </div>
+
+    <div class="items-grid">
+      <!-- CAÑÓN VERDE -->
+      <div class="item-card">
+        <img src="images/cannon_green.png" alt="Cañón Verde" class="item-icon-img">
+        <h4>Cañón Verde</h4>
+        <p><strong>Disparo Manual:</strong> Apunta en una dirección fija. Orión espera adentro y se lanza cuando tocas la pantalla.</p>
+      </div>
+
+      <!-- CAÑÓN AZUL -->
+      <div class="item-card">
+        <img src="images/cannon_blue.png" alt="Cañón Azul" class="item-icon-img">
+        <h4>Cañón Azul</h4>
+        <p><strong>Automático / Móvil:</strong> Se dispara solo tras un breve conteo y muchos se desplazan sobre rieles horizontales o verticales.</p>
+      </div>
+
+      <!-- CAÑÓN MORADO -->
+      <div class="item-card">
+        <img src="images/cannon_purple.png" alt="Cañón Morado" class="item-icon-img">
+        <h4>Cañón Morado</h4>
+        <p><strong>Oscilante:</strong> Se balancea de un lado a otro como un péndulo cósmico. Calcula el ángulo perfecto para saltar.</p>
+      </div>
+
+      <!-- CAÑÓN ROJO -->
+      <div class="item-card">
+        <img src="images/cannon_red.png" alt="Cañón Rojo" class="item-icon-img">
+        <h4>Cañón Rojo</h4>
+        <p><strong>Giro Rápido 360°:</strong> Da vueltas continuas a alta velocidad. Un desafío que premia tus mejores reflejos.</p>
+      </div>
+
+      <!-- CAÑÓN CHECKPOINT -->
+      <div class="item-card">
+        <img src="images/cannon_checkpoint.png" alt="Cañón Checkpoint" class="item-icon-img">
+        <h4>Punto de Control</h4>
+        <p><strong>Bandera de Salvamento:</strong> Guarda tu avance en mitad del nivel y resguarda tus monedas para revivir allí si caes.</p>
+      </div>
+
+      <!-- TURBINA -->
+      <div class="item-card">
+        <img src="images/turbina.png" alt="Turbina Eólica" class="item-icon-img">
+        <h4>Turbina de Viento</h4>
+        <p><strong>Corriente de Aire:</strong> Desvía o impulsa la trayectoria de Orión en pleno vuelo hacia zonas secretas o elevadas.</p>
+      </div>
+
+      <!-- REBOTADORES -->
+      <div class="item-card">
+        <img src="images/balloon_green.png" alt="Llantas y Globos" class="item-icon-img">
+        <h4>Rebotadores</h4>
+        <p><strong>Impulso Elástico:</strong> Llantas y globos que rebotan a Orión con fuerza renovada en la dirección opuesta al choque.</p>
+      </div>
+
+      <!-- DON TUERCA -->
+      <div class="item-card">
+        <img src="images/boss_demon.png" alt="Don Tuerca Jefe" class="item-icon-img">
+        <h4>Don Tuerca (Jefe)</h4>
+        <p><strong>Guardián Mecánico:</strong> Un coloso blindado que defiende el final de los mundos con patrones de ataque dinámicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIONS MAKER & COMUNIDAD ONLINE -->
   <section id="maker" class="section-wrap">
     <div class="maker-banner">
       <div class="maker-content">
-        <h3>🛠️ Orions Maker: Crea y Comparte</h3>
-        <p>Un potente estudio de edición integrado directamente en el juego para construir tus propios niveles sin límites.</p>
+        <div class="hero-tag" style="margin-bottom: 12px;">🌟 Crea, Valida y Comparte con el Mundo</div>
+        <h3>Orions Maker & Niveles Mundiales</h3>
+        <p>Un estudio de desarrollo completo integrado dentro del videojuego para diseñar, probar y publicar tus niveles en la nube con toda la comunidad.</p>
+        
         <ul class="maker-features-list">
-          <li><strong>Paleta completa:</strong> 15 herramientas que incluyen cañones, monedas, nubes, cactus, yunques y contenedor.</li>
-          <li><strong>Mecánicas avanzadas:</strong> Ajuste interactivo de rieles móviles y pasos de rotación con sombras guía.</li>
-          <li><strong>Validación rigurosa:</strong> Supera tu nivel con al menos el 90% de monedas antes de compartirlo.</li>
-          <li><strong>12 Ranuras Locales:</strong> Guarda, sobrescribe, prueba y exporta archivos de nivel para tus amigos.</li>
+          <li><strong>Paleta Flotante Transparente:</strong> Más de 17 herramientas con cañones, obstáculos, monedas y rieles móviles con visualización limpia.</li>
+          <li><strong>Selector de Música para Diseñar:</strong> Rota en tiempo real entre las pistas sonoras del Taller, Mundos 1, 2, 3 o Jefes mientras construyes.</li>
+          <li><strong>Certificación Automática de Dificultad:</strong> Supera tu nivel en Modo Prueba con 90%+ de monedas y el juego medirá automáticamente si es <em>Fácil</em>, <em>Normal</em> o <em>Difícil</em>.</li>
+          <li><strong>Niveles Mundiales (Cloud Firestore):</strong> Publica tu nivel verificado a la red con tu nick de Google Play Games para que jugadores de todo el planeta lo disfruten.</li>
+          <li><strong>12 Ranuras Locales:</strong> Guarda tus proyectos en marcha en casilleros personales independientes.</li>
         </ul>
-        <a href="#galeria" class="jelly-btn-cyan">Ver Galería de Pantalla</a>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="#galeria" class="jelly-btn-cyan">Ver Pantallas del Maker</a>
+          <a href="#tienda" class="jelly-btn-purple">Tienda & Personalización</a>
+        </div>
       </div>
+
       <div class="maker-image">
         <img src="images/screenshot_maker.png" alt="Interfaz de Orions Maker" class="maker-preview-img">
+      </div>
+    </div>
+
+    <!-- TARJETAS DE COMUNIDAD -->
+    <div class="community-cards-grid">
+      <div class="community-subcard">
+        <h4>🔍 Buscador de Niveles</h4>
+        <p>Encuentra niveles creados por la comunidad mediante su nombre, código único o el nick de su creador de Google Play Games.</p>
+      </div>
+      <div class="community-subcard">
+        <h4>🔥 Populares, Nuevos y Favoritos</h4>
+        <p>Filtra por las creaciones más destacadas, los estrenos recientes o marca tus pistas predilectas para jugar sin conexión.</p>
+      </div>
+      <div class="community-subcard">
+        <h4>🚀 Juega o Edita en tus Slots</h4>
+        <p>Juega directamente cualquier nivel compartido por la comunidad o cópialo en una de tus 12 ranuras para editarlo a tu gusto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIENDA & COMPRAS DENTRO DEL JUEGO -->
+  <section id="tienda" class="section-wrap" style="background: rgba(12, 8, 25, 0.4); border-radius: 28px;">
+    <div class="section-header">
+      <div class="tag">Monetización Ética & Transparente</div>
+      <h2>Tienda & Compras Integradas</h2>
+      <p>Orión's Journey respeta tu tiempo: no hay tiempos de espera forzados, ni anuncios publicitarios invasivos. Las compras son completamente opcionales y gestionadas de forma 100% segura por Google Play.</p>
+    </div>
+
+    <div class="shop-grid">
+      <!-- PACK 500 -->
+      <div class="shop-card">
+        <span class="shop-icon">🪙</span>
+        <h3>Pack Explorador</h3>
+        <div class="shop-price">500 Monedas</div>
+        <p class="shop-desc">Ideal para desbloquear tus primeros colores de chasis en el Armario de Orión.</p>
+        <ul class="shop-perks-list">
+          <li>500 monedas de uso inmediato</li>
+          <li>Desbloquea skins básicas</li>
+          <li>Sin anuncios ni publicidad</li>
+        </ul>
+      </div>
+
+      <!-- PACK 2000 -->
+      <div class="shop-card featured">
+        <div class="shop-badge">Más Popular</div>
+        <span class="shop-icon">✨</span>
+        <h3>Pack Aventurero</h3>
+        <div class="shop-price">2,000 Monedas</div>
+        <p class="shop-desc">La mejor opción para coleccionar múltiples variantes cosméticas y estelas neón.</p>
+        <ul class="shop-perks-list">
+          <li>2,000 monedas estelares</li>
+          <li>Desbloqueo de múltiples estilos</li>
+          <li>Estelas de propulsión exclusivas</li>
+        </ul>
+      </div>
+
+      <!-- DESBLOQUEO COMPLETO -->
+      <div class="shop-card">
+        <span class="shop-icon">👑</span>
+        <h3>Aventura Completa</h3>
+        <div class="shop-price">Full Game Unlock</div>
+        <p class="shop-desc">Desbloquea el acceso ilimitado a todos los mundos y ventajas cósmicas para siempre.</p>
+        <ul class="shop-perks-list">
+          <li>Acceso a todos los mundos y niveles</li>
+          <li>Desbloqueo de skins prémium</li>
+          <li>Soporte directo al desarrollo</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -680,8 +1135,8 @@
   <section id="galeria" class="section-wrap">
     <div class="section-header">
       <div class="tag">Showcase</div>
-      <h2>Capturas del Juego</h2>
-      <p>Diseño visual artesanal con botones Jelly 3D, contrastes cyberpunk y arte conceptual pulido.</p>
+      <h2>Capturas del Videojuego</h2>
+      <p>Estética cyberpunk de alta fidelidad, botones Jelly 3D táctiles y diseño artesanal nativo en Android.</p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item">
@@ -700,9 +1155,9 @@
     <div class="privacy-card">
       <div class="privacy-text">
         <h3>🔒 Política de Privacidad y Seguridad</h3>
-        <p>Orión's Journey está comprometido con la transparencia: no recopilamos datos personales sensibles, no usamos anuncios invasivos y tu progreso se queda en tu dispositivo.</p>
+        <p>Orión's Journey protege a sus jugadores: no vendemos datos personales, no rastreamos ubicaciones GPS y todas las compras se procesan cifradas por Google Play Billing.</p>
       </div>
-      <a href="privacy.html" class="jelly-btn-pink">Leer Política Completa</a>
+      <a href="privacy.html" class="jelly-btn-cyan">Leer Política Completa</a>
     </div>
   </section>
 
@@ -713,14 +1168,14 @@
         <img src="images/icon.png" alt="Logo de Orión's Journey">
         <span>ORIÓN'S JOURNEY</span>
       </div>
-      <div style="display: flex; gap: 24px;">
+      <div style="display: flex; gap: 24px; align-items: center;">
         <a href="privacy.html" style="color: var(--neon-cyan); text-decoration: none; font-weight: 600;">Política de Privacidad</a>
-        <a href="mailto:cristian.tabares.dev@gmail.com" style="color: var(--text-muted); text-decoration: none;">Contacto y Soporte</a>
+        <a href="mailto:doblectabares@gmail.com" style="color: var(--text-muted); text-decoration: none;">Contacto: doblectabares@gmail.com</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© 2026 Orión's Journey • Desarrollado por <strong>Cristian Camilo Tabares</strong>. Todos los derechos reservados.</p>
-      <p style="margin-top: 6px;">Paquete de aplicación: <code>com.cristiantabares.orionsjourney</code></p>
+      <p style="margin-top: 6px;">Soporte oficial: <a href="mailto:doblectabares@gmail.com">doblectabares@gmail.com</a> • Paquete de aplicación: <code>com.cristiantabares.orionsjourney</code></p>
     </div>
   </footer>
 
